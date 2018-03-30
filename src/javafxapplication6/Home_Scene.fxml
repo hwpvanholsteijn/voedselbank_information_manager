@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication6.Home_SceneController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="780.0">
+         <children>
+            <JFXButton fx:id="resetButton" maxHeight="0.0" maxWidth="0.0" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="0.0" textFill="TRANSPARENT" /> 
+            <ImageView fitHeight="600.0" fitWidth="884.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMG/BackgroundTitle.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="624.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMG/clientenIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="379.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMG/listIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="155.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMG/pinIcon.png" />
+               </image>
+            </ImageView>
+            <Text fill="#141414" layoutX="316.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aan de slag">
+               <font>
+                  <Font name="Lato Bold" size="29.0" />
+               </font>
+            </Text>
+            <Pane layoutX="349.0" layoutY="60.0" prefHeight="2.0" prefWidth="81.0" style="-fx-background-color: #ef7303;" />
+            <JFXButton fx:id="uitgiftpuntKnop" layoutX="105.0" layoutY="122.0" onAction="#setUit" prefWidth="150.0" style="-fx-border-radius: 3;" text="Uitgiftepunten" textFill="#2e2e2e">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="70.0" />
+               </padding>
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="bevooradingslijst" layoutX="329.0" layoutY="122.0" onAction="#setBev" prefWidth="150.0" style="-fx-border-radius: 3;" text="Bevoorradingslijst" textFill="#2e2e2e">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="70.0" />
+               </padding>
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="clientKnop" layoutX="574.0" layoutY="122.0" onAction="#setClient" prefWidth="150.0" style="-fx-border-color: ; -fx-background-color: white; -fx-border-radius: 3;" text="Clienten" textFill="#2e2e2e">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="70.0" />
+               </padding>
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </JFXButton>            
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

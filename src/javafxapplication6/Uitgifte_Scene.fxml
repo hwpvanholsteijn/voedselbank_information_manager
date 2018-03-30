@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication6.Uitgifte_SceneController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="786.0">
+         <children>
+             <JFXButton fx:id="resetButton" maxHeight="0.0" maxWidth="0.0" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="0.0" textFill="TRANSPARENT" /> 
+            <ImageView fitHeight="600.0" fitWidth="786.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../IMG/UitgifteBigBg.png" />
+               </image>
+            </ImageView>
+            <Pane layoutY="146.0" prefHeight="404.0" prefWidth="786.0">
+               <children>
+                  <Pane fx:id="AanPane" layoutX="295.0" layoutY="23.0" prefHeight="358.0" prefWidth="197.0" style="-fx-background-color: white;">
+                     <children>
+                        <Text fill="#c46fff" layoutX="11.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nieuw Uitgiftepunt">
+                           <font>
+                              <Font name="Lato Heavy" size="20.0" />
+                           </font>
+                        </Text>
+                        <JFXTextField fx:id="naam" labelFloat="true" layoutX="25.0" layoutY="72.0" promptText="Naam:" />
+                        <JFXTextField fx:id="postcode" labelFloat="true" layoutX="25.0" layoutY="122.0" promptText="Postcode:" />
+                        <JFXTextField fx:id="adres" labelFloat="true" layoutX="25.0" layoutY="178.0" promptText="Adres:" />
+                        <JFXButton layoutX="55.0" layoutY="282.0" onAction="#aanmaken" style="-fx-border-color: black; -fx-border-width: 1; -fx-background-color: c46fff;" text="Aanmaken" />
+                        <JFXTextField fx:id="maximumcapaciteit" labelFloat="true" layoutX="25.0" layoutY="233.0" promptText="Maximumcapaciteit" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="OpPane" layoutX="40.0" layoutY="23.0" prefHeight="358.0" prefWidth="197.0" style="-fx-background-color: white;">
+                     <children>
+                        <JFXCheckBox fx:id="capaciteitCheckbox" layoutX="16.0" layoutY="125.0" text="Capaciteit" />
+                        <JFXCheckBox fx:id="AdresCheckbox" layoutX="16.0" layoutY="155.0" text="Adres" />
+                        <JFXCheckBox fx:id="postcodeCheckbox" layoutX="16.0" layoutY="185.0" text="Postcode" />
+                        <Text fill="#ef7303" layoutX="6.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gegevens opvragen">
+                           <font>
+                              <Font name="Lato Heavy" size="20.0" />
+                           </font>
+                        </Text>
+                        <JFXButton layoutX="62.0" layoutY="281.0" onAction="#opvragen" style="-fx-border-color: black; -fx-border-width: 1; -fx-background-color: ef7303;" text="Opvragen" />
+                        <ImageView fitHeight="53.0" fitWidth="53.0" layoutX="71.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../IMG/setInfo.png" />
+                           </image>
+                        </ImageView>
+                        <JFXCheckBox fx:id="aantalClientenCheckbox" layoutX="16.0" layoutY="215.0" text="Aantal cliënten" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="BewPane" layoutX="550.0" layoutY="23.0" prefHeight="358.0" prefWidth="197.0" style="-fx-background-color: white;">
+                     <children>
+                        <Text fill="#5584ff" layoutX="11.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximumcapaciteit">
+                           <font>
+                              <Font name="Lato Heavy" size="20.0" />
+                           </font>
+                        </Text>
+                        <JFXButton layoutX="64.0" layoutY="283.0" onAction="#bewerken" style="-fx-border-color: black; -fx-border-width: 1; -fx-background-color: #5584ff;" text="Bewerken" />
+                        <Text fill="#5584ff" layoutX="57.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bewerken">
+                           <font>
+                              <Font name="Lato Heavy" size="18.0" />
+                           </font>
+                        </Text>
+                        <JFXComboBox fx:id="uitgiftepuntenDrop11" layoutX="16.0" layoutY="150.0" prefHeight="25.0" prefWidth="166.0" promptText="Selecteer uitgiftepunt:" />
+                        <JFXTextField fx:id="maximumcapaciteitBewerken" layoutX="17.0" layoutY="184.0" prefHeight="25.0" prefWidth="166.0" promptText="Maximumcapaciteit" />
+                        <ImageView fitHeight="78.0" fitWidth="47.0" layoutX="75.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../IMG/GetInfo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane prefHeight="174.0" prefWidth="780.0">
+               <children>
+                  <Text fill="WHITE" layoutX="300.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uitgiftepunten">
+                     <font>
+                        <Font name="Lato Medium" size="27.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#e4e4e4" layoutX="335.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hier kan je gegevens">
+                     <font>
+                        <Font name="Lato Semibold" size="12.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#e4e4e4" layoutX="301.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bewerken, toevoegen en opvragen">
+                     <font>
+                        <Font name="Lato Semibold" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

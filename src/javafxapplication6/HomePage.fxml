@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication6.HomePageController">
+   <children>
+      <Pane fx:id="scenePane" layoutX="220.0" prefHeight="600.0" prefWidth="780.0" />
+      <Pane fx:id="NavBar" prefHeight="600.0" prefWidth="220.0">
+         <children>
+            <VBox prefHeight="521.0" prefWidth="220.0" style="-fx-background-color: white;">
+               <children>
+                  <JFXButton fx:id="BtnHome" alignment="BOTTOM_LEFT" cacheShape="false" centerShape="false" focusTraversable="false" onAction="#setHome" prefHeight="34.0" prefWidth="600.0" scaleShape="false" text="Home" textFill="#1b1b1b">
+                     <font>
+                        <Font name="Lato Regular" size="17.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="15.0" right="5.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="BtnUitgifte" alignment="BOTTOM_LEFT" cacheShape="false" centerShape="false" focusTraversable="false" onAction="#setUit" prefHeight="34.0" prefWidth="600.0" scaleShape="false" text="Uitgiftepunten" textFill="#1b1b1b">
+                     <font>
+                        <Font name="Lato Regular" size="17.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="15.0" right="5.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="BtnLijst" alignment="BOTTOM_LEFT" cacheShape="false" centerShape="false" focusTraversable="false" onAction="#setBevoor" prefHeight="34.0" prefWidth="600.0" scaleShape="false" text="Bevooradingslijst" textFill="#1b1b1b">
+                     <font>
+                        <Font name="Lato Regular" size="17.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="15.0" right="5.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="BtnClienten" alignment="BOTTOM_LEFT" cacheShape="false" centerShape="false" focusTraversable="false" onAction="#setClient" prefHeight="34.0" prefWidth="600.0" scaleShape="false" text="Clienten" textFill="#1b1b1b">
+                     <font>
+                        <Font name="Lato Regular" size="17.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="15.0" right="5.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="BtnIntake" alignment="BOTTOM_LEFT" cacheShape="false" centerShape="false" focusTraversable="false" onAction="#setIntake" prefHeight="34.0" prefWidth="600.0" scaleShape="false" text="Intakes toevoegen" textFill="#1b1b1b">
+                     <font>
+                        <Font name="Lato Regular" size="17.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="5.0" left="15.0" right="5.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="Btnuseraanmaken" alignment="BOTTOM_LEFT" cacheShape="false" centerShape="false" focusTraversable="false" onAction="#setMedewerker" prefHeight="34.0" prefWidth="600.0" scaleShape="false" text="Medewerker toevoegen" textFill="#1b1b1b">
+                     <font>
+                        <Font name="Lato Regular" size="17.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="5.0" left="15.0" right="5.0" />
+                     </padding>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </VBox>
+            <Pane layoutY="521.0" prefHeight="80.0" prefWidth="220.0" style="-fx-background-color: #333333;">
+               <children>
+                  <VBox alignment="CENTER" layoutY="13.0">
+                     <children>
+                        <HBox alignment="CENTER" layoutY="36.0" prefHeight="34.0" prefWidth="220.0">
+                           <children>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../IMG/UserIcon.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Text fx:id="naamGebruiker" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="73.01600646972656">
+                                 <font>
+                                    <Font name="Lato Semibold" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <JFXButton contentDisplay="CENTER" layoutX="77.0" layoutY="14.0" onAction="#logOut" text="Exit" textFill="WHITE">
+                           <font>
+                              <Font name="Lato Medium" size="15.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

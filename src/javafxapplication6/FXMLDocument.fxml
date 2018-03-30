@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication6.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126.0" layoutY="120.0" minHeight="16" minWidth="69" />
+      <Pane prefHeight="600.0" prefWidth="757.0" style="-fx-background-color: #e6e6e6;">
+         <children>
+            <ImageView fitHeight="95.0" fitWidth="496.0" layoutX="153.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMG/Logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="750.0" prefHeight="600.0" prefWidth="250.0" style="-fx-background-color: #ef7303;">
+         <children>
+            <Text fill="WHITE" layoutX="22.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN">
+               <font>
+                  <Font name="Lato Black" size="37.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="Gebruikersnaam" labelFloat="true" layoutX="22.0" layoutY="263.0" prefHeight="25.0" prefWidth="207.0" promptText="Gebruikersnaam" unFocusColor="WHITE">
+               <font>
+                  <Font name="Lato Regular" size="13.0" />
+               </font>
+            </JFXTextField>            
+            <JFXPasswordField fx:id="Wachtwoord" labelFloat="true" layoutX="22.0" layoutY="313.0" prefHeight="25.0" prefWidth="207.0" promptText="Wachtwoord" unFocusColor="WHITE">
+               <font>
+                  <Font name="Lato Regular" size="13.0" />
+               </font>
+            </JFXPasswordField>            
+            <JFXButton fx:id="loginBtn" layoutX="170.0" layoutY="382.0" onAction="#loginToProgram" style="-fx-background-color: #d66703;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Lato Regular" size="11.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>

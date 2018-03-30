@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication6.Clienten_SceneController">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="780.0">
+         <children>
+            <JFXButton fx:id="resetButton" maxHeight="0.0" maxWidth="0.0" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="0.0" textFill="TRANSPARENT" /> 
+            <ImageView fitHeight="213.0" fitWidth="780.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMG/showMapBg.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="336.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clienten">
+               <font>
+                  <Font name="Lato Medium" size="29.0" />
+               </font>
+            </Text>
+            <Text fill="#e8e8e8" layoutX="348.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Het overzicht">
+               <font>
+                  <Font name="Lato Medium" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#e8e8e8" layoutX="310.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="van verschillende clienten">
+               <font>
+                  <Font name="Lato Medium" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutY="132.0" prefHeight="468.0" prefWidth="780.0" style="-fx-background-color: #e6e6e6;">
+         <children>
+            <Pane layoutX="86.0" layoutY="40.0" prefHeight="389.0" prefWidth="242.0">
+               <children>
+                  <Pane layoutX="24.0" layoutY="15.0" prefHeight="373.0" prefWidth="202.0" style="-fx-border-color: #ef7303;">
+                     <children>
+                        <VBox layoutY="8.0" prefHeight="324.0" prefWidth="201.0">
+                           <children>
+                              <Text fill="#ef7303" strokeType="OUTSIDE" strokeWidth="0.0" text="Algemeen" textAlignment="CENTER" wrappingWidth="200.36600494384766">
+                                 <font>
+                                    <Font name="Lato Medium" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="30.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <JFXCheckBox fx:id="Naam" checkedColor="#ef7303" prefHeight="17.0" prefWidth="203.0" text="Naam">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="5.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets top="-2.0" />
+                                 </padding>
+                              </JFXCheckBox>
+                              <JFXCheckBox fx:id="Email" checkedColor="#ef7303" prefHeight="17.0" prefWidth="203.0" text="Email">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="5.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets top="-2.0" />
+                                 </padding>
+                              </JFXCheckBox>
+                              <JFXCheckBox fx:id="Mobiel" checkedColor="#ef7303" prefHeight="17.0" prefWidth="208.0" text="Mobiel">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="5.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets top="-2.0" />
+                                 </padding>
+                              </JFXCheckBox>
+                              <JFXCheckBox fx:id="Telefoon" checkedColor="#ef7303" prefHeight="17.0" prefWidth="215.0" text="Telefoon">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="5.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets top="-2.0" />
+                                 </padding>
+                              </JFXCheckBox>
+                              <Text fill="#ef7303" strokeType="OUTSIDE" strokeWidth="0.0" text="Adres" textAlignment="CENTER" wrappingWidth="200.36600494384766">
+                                 <font>
+                                    <Font name="Lato Medium" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="40.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <JFXCheckBox fx:id="Postcode" checkedColor="#ef7303" prefHeight="17.0" prefWidth="215.0" text="Postcode">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="5.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets top="-2.0" />
+                                 </padding>
+                              </JFXCheckBox>
+                              <JFXCheckBox fx:id="Adres" checkedColor="#ef7303" layoutX="20.0" layoutY="227.0" prefHeight="17.0" prefWidth="215.0" text="Adres">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets top="-2.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="5.0" />
+                                 </VBox.margin>
+                              </JFXCheckBox>
+                              <VBox>
+                                 <children>
+                                    <JFXCheckBox fx:id="Plaats" checkedColor="#ef7303" onAction="#showPlaats" prefHeight="17.0" prefWidth="70.0" text="Plaats">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <VBox.margin>
+                                          <Insets left="10.0" top="5.0" />
+                                       </VBox.margin>
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="5.0" />
+                                       </HBox.margin>
+                                    </JFXCheckBox>
+                                    <JFXComboBox fx:id="plaatsCombo" focusColor="#ef7303" prefHeight="25.0" prefWidth="197.0">
+                                       <padding>
+                                          <Insets left="50.0" />
+                                       </padding>
+                                    </JFXComboBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="42.0" layoutY="2.0" prefHeight="28.0" prefWidth="159.0" style="-fx-background-color: #e6e6e6;">
+                     <children>
+                        <Text fill="#ef7303" layoutX="23.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Persoonlijk">
+                           <font>
+                              <Font name="Lato Medium" size="23.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane layoutX="452.0" layoutY="40.0" prefHeight="389.0" prefWidth="242.0">
+               <children>
+                  <Pane layoutX="24.0" layoutY="15.0" prefHeight="373.0" prefWidth="202.0" style="-fx-border-color: #5684ff;">
+                     <children>
+                        <VBox layoutY="8.0" prefHeight="324.0" prefWidth="201.0">
+                           <children>
+                              <Text fill="#5684ff" strokeType="OUTSIDE" strokeWidth="0.0" text="Algemeen" textAlignment="CENTER" wrappingWidth="200.36600494384766">
+                                 <font>
+                                    <Font name="Lato Medium" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="30.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <JFXCheckBox fx:id="antPersonen" checkedColor="#5684ff" prefHeight="17.0" prefWidth="206.0" text="Aantal personen">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="5.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets top="-2.0" />
+                                 </padding>
+                              </JFXCheckBox>
+                              <JFXCheckBox fx:id="antPakketten" checkedColor="#5684ff" prefHeight="17.0" prefWidth="203.0" text="Aantal pakketten">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="5.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets top="-2.0" />
+                                 </padding>
+                              </JFXCheckBox>
+                              <JFXCheckBox fx:id="Uitgiftepunt" checkedColor="#5684ff" prefHeight="17.0" prefWidth="203.0" text="Uitgiftepunt">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="5.0" />
+                                 </VBox.margin>
+                              </JFXCheckBox>
+                              <JFXCheckBox fx:id="Contactpersoon" checkedColor="#5684ff" prefHeight="17.0" prefWidth="149.0" text="Contactpersoon">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets top="-2.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="5.0" />
+                                 </VBox.margin>
+                              </JFXCheckBox>
+                              <VBox>
+                                 <children>
+                                    <JFXCheckBox fx:id="Status" checkedColor="#5684ff" onAction="#showStatus" prefHeight="17.0" prefWidth="82.0" text="Status">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <VBox.margin>
+                                          <Insets left="10.0" top="5.0" />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets top="-2.0" />
+                                       </padding>
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="5.0" />
+                                       </HBox.margin>
+                                    </JFXCheckBox>
+                                    <JFXComboBox fx:id="statusCombo" focusColor="#5684ff" onAction="#showStatus" prefHeight="25.0" prefWidth="197.0">
+                                       <HBox.margin>
+                                          <Insets right="5.0" />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets left="50.0" />
+                                       </padding>
+                                    </JFXComboBox>
+                                 </children>
+                              </VBox>
+                              <Text fill="#5684ff" strokeType="OUTSIDE" strokeWidth="0.0" text="Datum" textAlignment="CENTER" wrappingWidth="200.36600494384766">
+                                 <font>
+                                    <Font name="Lato Medium" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="20.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <JFXCheckBox fx:id="startDate" checkedColor="#5684ff" prefHeight="17.0" prefWidth="208.0" text="Start">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="5.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets top="-2.0" />
+                                 </padding>
+                              </JFXCheckBox>
+                              <JFXCheckBox fx:id="stopDate" checkedColor="#5684ff" prefHeight="17.0" prefWidth="215.0" text="Stop">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="5.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets top="-2.0" />
+                                 </padding>
+                              </JFXCheckBox>
+                              <JFXCheckBox fx:id="herDate" checkedColor="#5684ff" prefHeight="17.0" prefWidth="215.0" text="Herintake">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="5.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets top="-2.0" />
+                                 </padding>
+                              </JFXCheckBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane layoutX="500.0" layoutY="42.0" prefHeight="28.0" prefWidth="159.0" style="-fx-background-color: #e6e6e6;">
+               <children>
+                  <Text fill="#5684ff" layoutX="14.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voedselbank">
+                     <font>
+                        <Font name="Lato Medium" size="23.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <JFXButton layoutX="353.0" layoutY="416.0" onAction="#showOverzicht" style="-fx-background-color: #c46FFF;" text="Overzicht" textFill="WHITE">
+               <font>
+                  <Font name="Lato Medium" size="13.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication6.Database_SceneController">
+    <children>
+      <Pane prefHeight="600.0" prefWidth="786.0">
+         <children>
+             <JFXButton fx:id="resetButton" maxHeight="0.0" maxWidth="0.0" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="0.0" textFill="TRANSPARENT" /> 
+            <ImageView fitHeight="600.0" fitWidth="786.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../IMG/UitgifteBigBg.png" />
+               </image>
+            </ImageView>
+            <Pane layoutY="146.0" prefHeight="404.0" prefWidth="786.0">
+               <children>
+                  <Pane fx:id="AanPane" layoutX="295.0" layoutY="76.0" prefHeight="174.0" prefWidth="197.0" style="-fx-background-color: white;">
+                     <children>
+                        <Text fill="#c46fff" layoutX="31.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lijst toevoegen">
+                           <font>
+                              <Font name="Lato Heavy" size="20.0" />
+                           </font>
+                        </Text>
+                        <JFXButton layoutX="60.0" layoutY="98.0" onAction="#AddItake" style="-fx-border-color: black; -fx-border-width: 1; -fx-background-color: c46fff;" text="Toevoegen" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane prefHeight="174.0" prefWidth="780.0">
+               <children>
+                  <Text fill="WHITE" layoutX="300.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Intakestatuslijst">
+                     <font>
+                        <Font name="Lato Medium" size="27.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#e4e4e4" layoutX="335.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hier kan je gegevens">
+                     <font>
+                        <Font name="Lato Semibold" size="12.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#e4e4e4" layoutX="301.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bewerken, toevoegen en opvragen">
+                     <font>
+                        <Font name="Lato Semibold" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication6.ClientenOpvragen_SceneController">
+        <children>
+      <Pane prefHeight="600.0" prefWidth="786.0">
+         <children>
+            <ImageView fitHeight="600.0" fitWidth="786.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../IMG/UitgifteBigBg.png" />
+               </image>
+            </ImageView>
+            
+            <Pane layoutY="89.0" prefHeight="518.0" prefWidth="786.0">
+               <children>                 
+                  <Pane fx:id="OpPane" layoutX="31.0" layoutY="23.0" prefHeight="453.0" prefWidth="724.0" style="-fx-background-color: white;">
+                     <children>
+                        <TableView fx:id="tableView" prefHeight="453.0" prefWidth="724.0" style="-fx-background-color: transparant;">
+                           <columns>
+                              <TableColumn fx:id="herintakeDatum" minWidth="150.0" prefWidth="75.0" text="Herintake datum" />
+                              <TableColumn fx:id="stopDatum" minWidth="150.0" prefWidth="75.0" text="Stop datum" />
+                              <TableColumn fx:id="startDatum" minWidth="150.0" prefWidth="75.0" text="Start datum" />
+                              <TableColumn fx:id="contactPersoon" minWidth="150.0" prefWidth="75.0" text="Contactpersoon" />
+                              <TableColumn fx:id="status" minWidth="150.0" prefWidth="75.0" text="Status" />
+                              <TableColumn fx:id="aantalPakketten" minWidth="150.0" prefWidth="75.0" text="Aantal pakketten" />
+                              <TableColumn fx:id="aantalPersonen" minWidth="150.0" prefWidth="75.0" text="Aantal Personen" />
+                              <TableColumn fx:id="plaats" minWidth="150.0" prefWidth="75.0" text="Plaats" />
+                              <TableColumn fx:id="postcode" minWidth="150.0" prefWidth="75.0" text="Postcode" />
+                              <TableColumn fx:id="telefoon" minWidth="150.0" prefWidth="75.0" text="Telefoon" />
+                              <TableColumn fx:id="mobiel" minWidth="150.0" prefWidth="75.0" text="Mobiel" />
+                              <TableColumn fx:id="email" minWidth="150.0" prefWidth="75.0" text="Email" />
+                              <TableColumn fx:id="naam" minWidth="150.0" prefWidth="75.0" text="naam" />
+                              <TableColumn fx:id="kaartnummer" minWidth="150.0" prefWidth="75.0" text="Kaartnummer" />
+                              <TableColumn fx:id="uitgiftepunt" minWidth="150.0" prefWidth="75.0" text="Uitgiftepunt" />
+                              <TableColumn fx:id="adres" minWidth="150.0" prefWidth="75.0" text="Adres" />
+                           </columns></TableView>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            
+                        <Pane prefHeight="101.0" prefWidth="780.0">
+               <children>
+                  <Text fill="WHITE" layoutX="272.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clienten overzicht">
+                     <font>
+                        <Font name="Lato Medium" size="27.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#backButton" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/BackIcon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="780.0" style="-fx-background-color: #e6e6e6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication6.Lijst_SceneController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="780.0" style="-fx-background-color: black;">
+         <children>
+            <ImageView fitHeight="600.0" fitWidth="838.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMG/Background.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="55.0" layoutY="164.0" prefHeight="61.0" prefWidth="671.0" style="-fx-background-color: #e6e6e6; -fx-background-radius: 10 10 0 0;">
+               <children>
+                  <Text fx:id="datumGekozen" fill="#111111" layoutX="305.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Week">
+                     <font>
+                        <Font name="Lato Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="weekNr" fill="#111111" layoutX="356.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font name="Lato Bold" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="55.0" layoutY="26.0" prefHeight="125.0" prefWidth="671.0" style="-fx-background-color: #e6e6e6; -fx-background-radius: 10;">
+               <children>
+                  <Text fill="#5584ff" layoutX="34.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bevoorradingslijst">
+                     <font>
+                        <Font name="Lato Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <JFXButton fx:id="save" layoutX="455.0" layoutY="36.0" onAction="#save" prefHeight="27.0" prefWidth="202.0" style="-fx-background-color: #5584ff;" text="Bevoorradingslijst opslaan" textFill="WHITE">
+                     <font>
+                        <Font name="Lato Semibold" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <DatePicker fx:id="datumG" layoutX="219.0" layoutY="37.0" onAction="#datumGekozen" />
+                  <Text fill="#5584ff" layoutX="219.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kies een datum" />
+                  <ImageView fitHeight="69.0" fitWidth="68.0" layoutX="71.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/DatePicker.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <TableView fx:id="tableview" layoutX="55.0" layoutY="225.0" prefHeight="355.0" prefWidth="671.0">
+               <columns>
+                  <TableColumn fx:id="uitgiftepunt" prefWidth="90.0" text="Uitgiftepunt" />
+                  <TableColumn fx:id="adres" prefWidth="84.0" text="Adres" />
+                  <TableColumn fx:id="postcode" prefWidth="72.0" text="Postcode" />
+                  <TableColumn fx:id="plaats" prefWidth="113.0" text="Plaats" />
+                  <TableColumn fx:id="pakket1" prefWidth="70.0" text="1-Pakket" />
+                  <TableColumn fx:id="pakket2" prefWidth="67.0" text="2-Pakket" />
+                  <TableColumn fx:id="pakket3" prefWidth="64.0" text="3-Pakket" />
+                  <TableColumn fx:id="pakketTotaal" prefWidth="110.0" text="Totaal-Pakket" />
+               </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
